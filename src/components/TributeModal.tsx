@@ -21,6 +21,8 @@ type TributeModalProps = {
 
 const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
+  const [relationship, setRelationship] = useState('');
+  const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const { toast } = useToast();
@@ -29,7 +31,7 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
     e.preventDefault();
     
     // In a real application, this would send the data to a server
-    console.log({ name, email, message });
+    console.log({ name, relationship, phone, email, message });
     
     toast({
       title: "Tribute Submitted",
@@ -38,6 +40,8 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
     
     // Reset form and close modal
     setName('');
+    setRelationship('');
+    setPhone('');
     setEmail('');
     setMessage('');
     onClose();
@@ -62,6 +66,28 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
               onChange={(e) => setName(e.target.value)} 
               placeholder="John Doe" 
               required 
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="relationship">Relationship</Label>
+            <Input 
+              id="relationship" 
+              value={relationship} 
+              onChange={(e) => setRelationship(e.target.value)} 
+              placeholder="Family, Friend, Colleague, etc." 
+              required 
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="phone">Phone Number (Optional)</Label>
+            <Input 
+              id="phone" 
+              type="tel" 
+              value={phone} 
+              onChange={(e) => setPhone(e.target.value)} 
+              placeholder="+1 (555) 123-4567" 
             />
           </div>
           
