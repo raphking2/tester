@@ -1,0 +1,103 @@
+
+import React, { useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from '@/components/ui/use-toast';
+
+type TributeModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // In a real application, this would send the data to a server
+    console.log({ name, email, message });
+    
+    toast({
+      title: "Tribute Submitted",
+      description: "Thank you for your condolence message.",
+    });
+    
+    // Reset form and close modal
+    setName('');
+    setEmail('');
+    setMessage('');
+    onClose();
+  };
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle className="text-center text-xl font-medium">Send Your Tribute</DialogTitle>
+          <DialogDescription className="text-center">
+            Share your memories and condolences for Sir Cosmas Chibueze Ugwoke.
+          </DialogDescription>
+        </DialogHeader>
+        
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="space-y-2">
+            <Label htmlFor="name">Your Name</Label>
+            <Input 
+              id="name" 
+              value={name} 
+              onChange={(e) => setName(e.target.value)} 
+              placeholder="John Doe" 
+              required 
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="email">Your Email</Label>
+            <Input 
+              id="email" 
+              type="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              placeholder="john@example.com" 
+              required 
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="message">Your Message</Label>
+            <Textarea 
+              id="message" 
+              value={message} 
+              onChange={(e) => setMessage(e.target.value)} 
+              placeholder="Share your memories or condolences..." 
+              rows={5} 
+              required 
+            />
+          </div>
+          
+          <DialogFooter className="sm:justify-center">
+            <Button type="submit" className="bg-gold hover:bg-gold-dark text-white">
+              Submit Tribute
+            </Button>
+          </DialogFooter>
+        </form>
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+export default TributeModal;
