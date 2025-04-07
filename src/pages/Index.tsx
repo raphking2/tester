@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Biography from '@/components/Biography';
 import TributeButton from '@/components/TributeButton';
+import HighlightedTributes from '@/components/HighlightedTributes';
 import TributeModal from '@/components/TributeModal';
 import ExpandableSections from '@/components/ExpandableSections';
 import Footer from '@/components/Footer';
@@ -24,6 +25,7 @@ const Index = () => {
         <Header />
         <Biography />
         <TributeButton onClick={openTributeModal} />
+        <HighlightedTributes />
         <ExpandableSections />
         <Footer />
         
