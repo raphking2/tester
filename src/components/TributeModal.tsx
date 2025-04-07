@@ -23,7 +23,6 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
   const [name, setName] = useState('');
   const [relationship, setRelationship] = useState('');
   const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const { toast } = useToast();
 
@@ -31,7 +30,7 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
     e.preventDefault();
     
     // In a real application, this would send the data to a server
-    console.log({ name, relationship, phone, email, message });
+    console.log({ name, relationship, phone, message });
     
     toast({
       title: "Tribute Submitted",
@@ -42,7 +41,6 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
     setName('');
     setRelationship('');
     setPhone('');
-    setEmail('');
     setMessage('');
     onClose();
   };
@@ -88,18 +86,6 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
               value={phone} 
               onChange={(e) => setPhone(e.target.value)} 
               placeholder="+1 (555) 123-4567" 
-            />
-          </div>
-          
-          <div className="space-y-2">
-            <Label htmlFor="email">Your Email</Label>
-            <Input 
-              id="email" 
-              type="email" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              placeholder="john@example.com" 
-              required 
             />
           </div>
           
