@@ -8,6 +8,32 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
+import hero3 from '../assets/images/hero3.jpeg';
+import EBERE1 from '../assets/images/EBERE1.jpg';
+import EBERE2 from '../assets/images/EBERE2.jpg';
+import EBERE3 from '../assets/images/EBERE3.jpg';
+import EBERE4 from '../assets/images/EBERE4.jpg';
+import EBERE5 from '../assets/images/EBERE5.jpg';
+import EBERE6 from '../assets/images/EBERE6.jpg';
+import EBERE7 from '../assets/images/EBERE7.jpg';
+import EBERE8 from '../assets/images/EBERE8.jpg';
+import EBERE9 from '../assets/images/EBERE9.jpg';
+import EBERE10 from '../assets/images/EBERE10.jpg';
+import EBERE11 from '../assets/images/EBERE11.jpg';
+import EBERE12 from '../assets/images/EBERE12.jpg';
+import EBERE13 from '../assets/images/EBERE13.jpg';
+import EBERE14 from '../assets/images/EBERE14.jpg';
+import EBERE15 from '../assets/images/EBERE15.jpg';
+import EBERE16 from '../assets/images/EBERE16.jpg';
+import EBERE17 from '../assets/images/EBERE17.jpg';
+import EBERE18 from '../assets/images/EBERE18.jpg';
+import EBERE20 from '../assets/images/EBERE20.jpg';
+import EBERE21 from '../assets/images/EBERE21.jpg';
+import pic1 from '../assets/images/pic1.jpg';
+import pic2 from '../assets/images/pic2.jpg';
+import pic3 from '../assets/images/pic3.jpg';
+
+
 type Photo = {
   id: number;
   src: string;
@@ -16,42 +42,178 @@ type Photo = {
   year: string;
 };
 
+
+
 const photos: Photo[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=500&h=350&fit=crop",
+    src: EBERE1,
     alt: "Sir Cosmas at his graduation",
-    caption: "University Graduation",
-    year: "1979"
+    caption: "",
+    year: "1955-2025"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&h=350&fit=crop",
+    src: hero3,
     alt: "Sir Cosmas with his family",
-    caption: "Family Gathering",
-    year: "1995"
+    caption: "",
+    year: "1955-2025"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&h=350&fit=crop",
+    src: EBERE10,
     alt: "Sir Cosmas at work",
-    caption: "Professional Life",
-    year: "2005"
+    caption: "",
+    year: "1955-2025"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500&h=350&fit=crop",
+    src: EBERE11,
     alt: "Sir Cosmas with colleagues",
-    caption: "Community Service Award",
-    year: "2015"
+    caption: "",
+    year: "1955-2025"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=500&h=350&fit=crop",
+    src: EBERE12,
     alt: "Sir Cosmas with grandchildren",
-    caption: "With Grandchildren",
-    year: "2022"
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 6,
+    src: EBERE13,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 7,
+    src: EBERE14,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 8,
+    src: EBERE15,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 9,
+    src: EBERE16,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 10,
+    src: EBERE17,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 11,
+    src: EBERE18,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 12,
+    src: EBERE2,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 13,
+    src: EBERE21,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 14,
+    src: EBERE3,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 15,
+    src: EBERE4,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 16,
+    src: EBERE5,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 17,
+    src: EBERE6,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 18,
+    src: EBERE7,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 19,
+    src: EBERE8,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 20,
+    src: EBERE9,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 21,
+    src: EBERE20,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 22,
+    src: pic1,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 23,
+    src: pic2,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
+  },
+  {
+    id: 24,
+    src: pic3,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: "1955-2025"
   }
+
 ];
 
 const PhotoGallery: React.FC = () => {

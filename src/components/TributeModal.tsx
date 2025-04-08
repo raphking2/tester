@@ -13,24 +13,46 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from '@/components/ui/use-toast';
-
+import axios from 'axios';
 type TributeModalProps = {
   isOpen: boolean;
   onClose: () => void;
 };
 
 const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
-  const [name, setName] = useState('');
-  const [relationship, setRelationship] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [relationship, setRelationship] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    relationship: '',
+    category: 'Family',
+    phone: '',
+    message: ''
+  });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // In a real application, this would send the data to a server
-    console.log({ name, relationship, phone, message });
+    // console.log({ name, relationship, phone, message });
+
+    try {
+      await axios.post('http://localhost:5000/api/tributes', formData);
+      // alert('Tribute submitted successfully!');
+      onClose();
+      setFormData({
+        name: '',
+        relationship: '',
+        category: 'Family',
+        phone: '',
+        message: ''
+      });
+    } catch (error) {
+      alert('Error submitting tribute');
+    }
     
     toast({
       title: "Tribute Submitted",
@@ -60,8 +82,8 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
             <Label htmlFor="name">Your Name</Label>
             <Input 
               id="name" 
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
+              value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="John Doe" 
               required 
             />
@@ -71,8 +93,8 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
             <Label htmlFor="relationship">Relationship</Label>
             <Input 
               id="relationship" 
-              value={relationship} 
-              onChange={(e) => setRelationship(e.target.value)} 
+              value={formData.relationship}
+              onChange={(e) => setFormData({ ...formData, relationship: e.target.value })}
               placeholder="Family, Friend, Colleague, etc." 
               required 
             />
@@ -83,8 +105,8 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
             <Input 
               id="phone" 
               type="tel" 
-              value={phone} 
-              onChange={(e) => setPhone(e.target.value)} 
+              value={formData.phone}
+            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="+1 (555) 123-4567" 
             />
           </div>
@@ -93,8 +115,8 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
             <Label htmlFor="message">Your Message</Label>
             <Textarea 
               id="message" 
-              value={message} 
-              onChange={(e) => setMessage(e.target.value)} 
+              value={formData.message}
+            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Share your memories or condolences..." 
               rows={5} 
               required 
