@@ -33,14 +33,21 @@ const TributeModal: React.FC<TributeModalProps> = ({ isOpen, onClose }) => {
   });
   const { toast } = useToast();
 
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+if (!backendUrl) {
+  console.error('Backend URL is not defined in environment variables');
+  return;
+}
+
   const handleSubmit = async (e: React.FormEvent) => {
+    console.log(backendUrl)
     e.preventDefault();
     
     // In a real application, this would send the data to a server
     // console.log({ name, relationship, phone, message });
 
     try {
-      await axios.post('http://localhost:5000/api/tributes', formData);
+      await axios.post(`${backendUrl}/api/tributes`, formData);
       // alert('Tribute submitted successfully!');
       onClose();
       setFormData({
