@@ -6,7 +6,14 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 const app = express();
 
-app.use(cors());
+// Configure CORS to trust your frontend domain
+app.use(cors({
+  origin: 'https://rememberingsirkosy.com',
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
+
+//app.use(cors());
 app.use(bodyParser.json());
 
 // Submit tribute

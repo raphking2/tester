@@ -98,7 +98,7 @@ const HighlightedTributes = () => {
   useEffect(() => {
     const fetchTributes = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/tributes`);
+        const response = await axios.get('/api/tributes');
         setTributes(response.data);
       } catch (err) {
         setError('Failed to load tributes');

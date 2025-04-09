@@ -47,7 +47,7 @@ if (!backendUrl) {
     // console.log({ name, relationship, phone, message });
 
     try {
-      await axios.post(`${backendUrl}/api/tributes`, formData);
+      await axios.post('/api/tributes', formData);
       // alert('Tribute submitted successfully!');
       onClose();
       setFormData({
