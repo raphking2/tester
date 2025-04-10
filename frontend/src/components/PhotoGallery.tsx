@@ -50,168 +50,168 @@ const photos: Photo[] = [
     src: EBERE1,
     alt: "Sir Cosmas at his graduation",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 2,
     src: hero3,
     alt: "Sir Cosmas with his family",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 3,
     src: EBERE10,
     alt: "Sir Cosmas at work",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 4,
     src: EBERE11,
     alt: "Sir Cosmas with colleagues",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 5,
     src: EBERE12,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 6,
     src: EBERE13,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 7,
     src: EBERE14,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 8,
     src: EBERE15,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 9,
     src: EBERE16,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 10,
     src: EBERE17,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 11,
     src: EBERE18,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 12,
     src: EBERE2,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 13,
     src: EBERE21,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 14,
     src: EBERE3,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 15,
     src: EBERE4,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 16,
     src: EBERE5,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 17,
     src: EBERE6,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 18,
     src: EBERE7,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 19,
     src: EBERE8,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 20,
     src: EBERE9,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 21,
     src: EBERE20,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 22,
     src: pic1,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 23,
     src: pic2,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   },
   {
     id: 24,
     src: pic3,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
-    year: "1955-2025"
+    year: ""
   }
 
 ];

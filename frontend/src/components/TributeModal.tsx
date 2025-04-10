@@ -91,7 +91,7 @@ if (!backendUrl) {
               id="name" 
               value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="John Doe" 
+              placeholder="name" 
               required 
             />
           </div>
@@ -114,7 +114,7 @@ if (!backendUrl) {
               type="tel" 
               value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="+1 (555) 123-4567" 
+              placeholder="+234 5551234567" 
             />
           </div>
           

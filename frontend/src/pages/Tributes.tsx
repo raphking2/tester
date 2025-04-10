@@ -168,7 +168,7 @@ const Tributes = () => {
 
   // Fetch tributes on mount
   useEffect(() => {
-    axios.get('http://localhost:5000/api/tributes')
+    axios.get('/api/tributes')
       .then((response) => {
         setTributes(response.data);
         setLoading(false);

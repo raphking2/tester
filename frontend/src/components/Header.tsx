@@ -59,8 +59,8 @@ const Header: React.FC = () => {
   </div>
 </div>
       
-      <h1 className="mt-6 text-3xl md:text-4xl font-semibold tracking-wide">Sir Cosmas Chibueze Ugwoke</h1>
-      <p className="text-xl md:text-2xl text-gray-600 font-light tracking-wider">1955 — 2025</p>
+      <h1 className="mt-6 text-3xl md:text-4xl font-semibold tracking-wide">Sir Ede Cosmas Chibueze</h1>
+      <p className="text-xl md:text-2xl text-gray-600 font-light tracking-wider">1963 — 2025</p>
     </header>
   );
 };
