@@ -10,11 +10,11 @@ import {
 
 import hero3 from '../assets/images/hero3.jpeg';
 import EBERE1 from '../assets/images/EBERE1.jpg';
-import EBERE2 from '../assets/images/EBERE2.jpg';
+
 import EBERE3 from '../assets/images/EBERE3.jpg';
-import EBERE4 from '../assets/images/EBERE4.jpg';
+
 import EBERE5 from '../assets/images/EBERE5.jpg';
-import EBERE6 from '../assets/images/EBERE6.jpg';
+
 import EBERE7 from '../assets/images/EBERE7.jpg';
 import EBERE8 from '../assets/images/EBERE8.jpg';
 import EBERE9 from '../assets/images/EBERE9.jpg';
@@ -26,10 +26,9 @@ import EBERE14 from '../assets/images/EBERE14.jpg';
 import EBERE15 from '../assets/images/EBERE15.jpg';
 import EBERE16 from '../assets/images/EBERE16.jpg';
 import EBERE17 from '../assets/images/EBERE17.jpg';
-import EBERE18 from '../assets/images/EBERE18.jpg';
+
 import EBERE20 from '../assets/images/EBERE20.jpg';
-import EBERE21 from '../assets/images/EBERE21.jpg';
-import pic1 from '../assets/images/pic1.jpg';
+
 import pic2 from '../assets/images/pic2.jpg';
 import pic3 from '../assets/images/pic3.jpg';
 
@@ -117,21 +116,21 @@ const photos: Photo[] = [
   },
   {
     id: 11,
-    src: EBERE18,
+    src: ,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
   },
   {
     id: 12,
-    src: EBERE2,
+    src: ,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
   },
   {
     id: 13,
-    src: EBERE21,
+    src: ,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -145,7 +144,7 @@ const photos: Photo[] = [
   },
   {
     id: 15,
-    src: EBERE4,
+    src: ,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -159,7 +158,7 @@ const photos: Photo[] = [
   },
   {
     id: 17,
-    src: EBERE6,
+    src: ,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -192,22 +191,16 @@ const photos: Photo[] = [
     caption: "",
     year: ""
   },
+  
   {
     id: 22,
-    src: pic1,
-    alt: "Sir Cosmas with grandchildren",
-    caption: "",
-    year: ""
-  },
-  {
-    id: 23,
     src: pic2,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
   },
   {
-    id: 24,
+    id: 23,
     src: pic3,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
