@@ -26,6 +26,16 @@ import EBERE14 from '../assets/images/EBERE14.jpg';
 import EBERE15 from '../assets/images/EBERE15.jpg';
 import EBERE16 from '../assets/images/EBERE16.jpg';
 import EBERE17 from '../assets/images/EBERE17.jpg';
+import new1 from '../assets/images/new1.jpeg';
+import new2 from '../assets/images/new2.jpeg';
+import new3 from '../assets/images/new3.jpeg';
+import new4 from '../assets/images/new4.jpeg';
+import new5 from '../assets/images/new5.jpeg';
+import new6 from '../assets/images/new6.jpeg';
+import new7 from '../assets/images/new7.jpeg';
+import new8 from '../assets/images/new8.jpeg';
+import new9 from '../assets/images/new9.jpeg';
+import new10 from '../assets/images/new10.jpeg';
 
 import EBERE20 from '../assets/images/EBERE20.jpg';
 
@@ -116,21 +126,21 @@ const photos: Photo[] = [
   },
   {
     id: 11,
-    src: ,
+    src: new1,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
   },
   {
     id: 12,
-    src: ,
+    src: new2,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
   },
   {
     id: 13,
-    src: ,
+    src: new3,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -144,7 +154,7 @@ const photos: Photo[] = [
   },
   {
     id: 15,
-    src: ,
+    src: new4,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -158,7 +168,7 @@ const photos: Photo[] = [
   },
   {
     id: 17,
-    src: ,
+    src: new5,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
@@ -202,6 +212,41 @@ const photos: Photo[] = [
   {
     id: 23,
     src: pic3,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: ""
+  },
+  {
+    id: 24,
+    src: new6,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: ""
+  },
+  {
+    id: 25,
+    src: new7,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: ""
+  },
+  {
+    id: 26,
+    src: new8,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: ""
+  },
+  {
+    id: 27,
+    src: new9,
+    alt: "Sir Cosmas with grandchildren",
+    caption: "",
+    year: ""
+  },
+  {
+    id: 28,
+    src: new10,
     alt: "Sir Cosmas with grandchildren",
     caption: "",
     year: ""
